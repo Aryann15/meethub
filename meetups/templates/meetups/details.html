@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ meetup_title }}</title>
+    <link rel="stylesheet" href="{% static 'meetups/styles/base.css' %}">
+    <link rel="stylesheet" href="{% static 'meetups/styles/meetup-detail.css' %}">
+</head>
+<body>
+    <main>
+        <article>
+            <img src="" alt="">
+
+            <section id="location">
+                <h2>Meetup Location</h2>
+                <address>this meetup takes place in <span>LOCATION</span> (ADDRESS).</address>
+            </section>
+
+            <section id="details">
+                <h2>Whats it about</h2>
+                <p>{{meetup_description}}</p>
+                <footer>
+                    <p>Need for details Contact <a href="">here</a></p>
+                </footer>
+            </section>
+
+            <section id="registration">
+                <h2>JOIN</h2>
+                 
+            </section>
+        </article>
+    </main>
+</body>
+</html>
