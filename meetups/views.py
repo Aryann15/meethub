@@ -12,3 +12,13 @@ def index(request):
     return render(request, "meetups/index.html", {
         'meetups': meetups
     })
+
+
+def meetup_details(request, meetup_slug):
+    selected_meetup = {
+     'title': 'web3 meetup' , 'description' : 'this is a web3 meetup!'   
+    }
+    return render(request ,'meetups/details.html',{
+        'meetup_title' : selected_meetup["title"],
+        'meetup-description' : selected_meetup['description']
+    })
